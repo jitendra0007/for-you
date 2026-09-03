@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>I'm Sorry, My Love 💌</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;600&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- floating hearts background -->
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <!-- audio -->
+  <button id="musicToggle" class="music-toggle" title="Play a little tune">
+    <span id="musicIcon">🎵</span>
+  </button>
+
+  <!-- ============ SECTION 1: LANDING ============ -->
+  <section class="section landing" id="landing">
+    <div class="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="envelope-flap"></div>
+        <div class="envelope-body"></div>
+        <div class="letter">
+          <p>💌</p>
+          <p class="letter-hint">click me</p>
+        </div>
+      </div>
+    </div>
+    <h1 class="landing-title">A little letter for you,<br><span class="name">my love</span></h1>
+    <p class="landing-sub">tap the envelope</p>
+  </section>
+
+  <!-- ============ SECTION 2: SORRY ============ -->
+  <section class="section sorry hidden" id="sorry">
+    <h2 class="script">I'm sorry.</h2>
+    <p class="typewriter" id="typewriter"></p>
+    <button class="btn-next" data-next="reasons">continue →</button>
+  </section>
+
+  <!-- ============ SECTION 3: REASONS ============ -->
+  <section class="section reasons hidden" id="reasons">
+    <h2 class="script">Here's what I mean by that…</h2>
+    <div class="cards">
+      <div class="card">
+        <div class="card-emoji">🙉</div>
+        <h3>I didn't listen the way you deserved.</h3>
+        <p>You were telling me how you felt and I got defensive instead of hearing you. That was wrong of me.</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">⏳</div>
+        <h3>I let a small thing become a big thing.</h3>
+        <p>I could have said sorry hours earlier. Pride is a bad substitute for you.</p>
+      </div>
+      <div class="card">
+        <div class="card-emoji">💭</div>
+        <h3>I forgot the most important part.</h3>
+        <p>Being right isn't the point. Being kind to you is.</p>
+      </div>
+    </div>
+    <button class="btn-next" data-next="promise">what I promise →</button>
+  </section>
+
+  <!-- ============ SECTION 4: PROMISE ============ -->
+  <section class="section promise hidden" id="promise">
+    <h2 class="script">I promise you…</h2>
+    <ul class="promise-list">
+      <li>To listen first, and answer second.</li>
+      <li>To choose <em>us</em> before ego.</li>
+      <li>To say sorry the moment I know I've hurt you — not hours later.</li>
+      <li>To remember, every day, how lucky I am that it's you.</li>
+    </ul>
+    <button class="btn-next" data-next="question">one last thing →</button>
+  </section>
+
+  <!-- ============ SECTION 5: THE QUESTION ============ -->
+  <section class="section question hidden" id="question">
+    <h2 class="script">Will you forgive me?</h2>
+    <p class="q-sub">(no pressure — take your time. I'll wait.)</p>
+    <div class="q-buttons">
+      <button id="yesBtn" class="btn-yes">Yes 💕</button>
+      <button id="noBtn" class="btn-no">No</button>
+    </div>
+    <p class="q-hint" id="qHint"></p>
+  </section>
+
+  <!-- ============ SECTION 6: FORGIVEN ============ -->
+  <section class="section forgiven hidden" id="forgiven">
+    <div class="big-heart">💖</div>
+    <h2 class="script big">Thank you.</h2>
+    <p class="final">
+      I don't take it for granted. Not for a second.<br>
+      I love you — more than the last time I said it, and less than the next.
+    </p>
+    <p class="signed">— yours, always</p>
+    <button class="btn-next" onclick="location.reload()">read it again ↺</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
